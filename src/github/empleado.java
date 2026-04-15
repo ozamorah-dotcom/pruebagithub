@@ -10,19 +10,22 @@ int id;
 String nombre;
 String apellido;
 String direccion;
+int salario;
 
     public empleado() {
         this.id = 0;
         this.nombre ="" ;
         this.apellido = "";
         this.direccion ="" ;
+        this.salario = 0;
     }
 
-    public empleado(int id, String nombre, String apellido, String direccion) {
+    public empleado(int id, String nombre, String apellido, String direccion,int salario) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
+        this.salario = salario;
     }
 
     public int getId() {
@@ -57,8 +60,24 @@ String direccion;
         this.direccion = direccion;
     }
 
+    public int getSalario() {
+        return salario;
+    }
+
+    public void setSalario(int salario) {
+        this.salario = salario;
+    }
 
 
+
+    public double calcular(){
+    double total;
+     
+     total=salario*5;   
+     
+    return total;
+    }
+    
 
 
 }
